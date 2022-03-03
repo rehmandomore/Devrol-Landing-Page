@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>Devrol - We are here to server you better</title>
+  </head>
+  <body>
+    <div
+      class="bg-blue-500 fixed w-full duration-1000 h-screen -mt-[100rem]"
+      id="demo"
+    >
+      <div class="p-5 flex justify-end">
+        <button onclick="close_open()" class="bg-white h-10 w-10 rounded-full">
+          <i class="bi bi-x-lg text-2xl"></i>
+        </button>
+      </div>
+      <div class="flex items-center h-full justify-center">
+        <div class="border-b-2 border-white w-80 flex justify-between p-2">
+          <input
+            type="text"
+            placeholder="Searching...."
+            class="bg-transparent placeholder:text-white font-light outline-none text-white"
+          />
+          <i class="bi bi-search text-2xl text-white"></i>
+        </div>
+      </div>
+    </div>
+
+    <header class="p-3 flex justify-between items-center pt-5">
+      <img
+        class="h-20"
+        src="https://devrol.com/wp-content/uploads/2022/02/Copy-of-FullLogo_Transparent.png"
+        alt=""
+      />
+      <nav class="flex items-center">
+        <ul class="flex space-x-5 font-semibold text-lg mr-12">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button onclick="search()" class="mx-5">
+          <i class="bi bi-search text-lg"></i>
+        </button>
+        <button
+          class="grid grid-cols-3 w-full h-full gap-1"
+          onclick="sidenav_open()"
+        >
+          <span class="bg-black p-1 rounded-full"></span>
+          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+          <span class="bg-black p-1 rounded-full"></span>
+          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+          <span class="bg-black p-1 rounded-full"></span>
+          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+          <span class="bg-black p-1 rounded-full"></span>
+          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+          <span class="bg-black p-1 rounded-full"></span>
+        </button>
+      </nav>
+    </header>
+    <div class="flex justify-end">
+      <div
+        class="h-screen bg-gradient-to-r from-[#E4EBF8] to-[#FAFBFD] fixed w-5/12 -mt-[7rem] duration-1000"
+        id="sidenav"
+      >
+        <div class="flex flex-col justify-center h-full">
+          <button
+            class="grid grid-cols-3 gap-1 w-8 m-10 ml-auto"
+            onclick="sidenav_close()"
+          >
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+          </button>
+          <ul class="flex flex-col space-y-7 font-semibold text-lg mr-12 p-7">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="lg:flex hidden flex-col justify-center h-full p-10">
+            <img
+              class="w-24"
+              src="https://devrol.com/wp-content/uploads/2022/02/Copy-of-FullLogo_Transparent.png"
+              alt=""
+            />
+            <h2 class="font-light leading-8">
+              DEVROL is providing full service software solutions to the clients
+              and customers, with a pool of latest tech-groomed specialists
+              working with the modern up to date tech stack.
+            </h2>
+          </div>
+          <div class="space-y-7 p-7">
+            <div class="flex items-center gap-4">
+              <i class="bi bi-geo-alt text-2xl text-blue-500"></i>
+              <div class="flex flex-col">
+                <p class="font-semibold">Address</p>
+                <p class="font-light">118 B Block,Johar Town,Lahore</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="bi bi-envelope text-2xl text-blue-500"></i>
+              <div class="flex flex-col">
+                <p class="font-semibold">Email</p>
+                <p class="font-light">info@devrol.com</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="bi bi-telephone-outbound text-2xl text-blue-500"></i>
+              <div class="flex flex-col">
+                <p class="font-semibold">Phone</p>
+                <p class="font-light">042-38915620</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function search() {
+    document.getElementById("demo").style.marginTop = "-0%";
+  }
+  function close_open() {
+    document.getElementById("demo").style.marginTop = "-130rem";
+  }
+  function sidenav_open() {
+    document.getElementById("sidenav").style.marginRight = "-0%";
+  }
+  function sidenav_close() {
+    document.getElementById("sidenav").style.marginRight = "-100%";
+  }
+</script>
