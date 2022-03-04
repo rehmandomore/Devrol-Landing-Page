@@ -12,6 +12,7 @@
     <title>Devrol - We are here to server you better</title>
   </head>
   <body>
+    <!-- Search Bar -->
     <div
       class="bg-blue-500 fixed w-full duration-1000 h-screen -mt-[100rem]"
       id="demo"
@@ -32,45 +33,50 @@
         </div>
       </div>
     </div>
-
-    <header class="p-3 flex justify-between items-center pt-5">
+    <!-- Header -->
+    <header class="px-16 flex justify-between items-center pt-5">
       <img
         class="h-20"
         src="https://devrol.com/wp-content/uploads/2022/02/Copy-of-FullLogo_Transparent.png"
         alt=""
       />
-      <nav class="flex items-center">
-        <ul class="flex space-x-5 font-semibold text-lg mr-12">
+      <nav class="flex items-center space-x-5">
+        <ul class="lg:flex hidden space-x-5 font-semibold text-lg mr-12">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button onclick="search()" class="mx-5">
-          <i class="bi bi-search text-lg"></i>
-        </button>
-        <button
-          class="grid grid-cols-3 w-full h-full gap-1"
-          onclick="sidenav_open()"
-        >
-          <span class="bg-black p-1 rounded-full"></span>
-          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-          <span class="bg-black p-1 rounded-full"></span>
-          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-          <span class="bg-black p-1 rounded-full"></span>
-          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-          <span class="bg-black p-1 rounded-full"></span>
-          <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-          <span class="bg-black p-1 rounded-full"></span>
-        </button>
+        <div class="space-x-10 flex items-center">
+          <button onclick="search()" class="">
+            <i class="bi bi-search text-lg"></i>
+          </button>
+          <button
+            class="grid grid-cols-3 w-full h-full gap-1"
+            onclick="sidenav_open()"
+          >
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+          </button>
+        </div>
       </nav>
     </header>
-    <div class="flex justify-end">
+    <!-- Side-Nav -->
+    <aside
+      class="flex justify-end duration-1000 -mt-[7rem] -mr-[100%]"
+      id="sidenav"
+    >
       <div
-        class="h-screen bg-gradient-to-r from-[#E4EBF8] to-[#FAFBFD] fixed w-5/12 -mt-[7rem] duration-1000"
-        id="sidenav"
+        class="bg-gradient-to-r fixed h-screen from-[#E4EBF8] to-[#FAFBFD] w-5/12"
       >
-        <div class="flex flex-col justify-center h-full">
+        <div class="flex flex-col justify-center">
           <button
             class="grid grid-cols-3 gap-1 w-8 m-10 ml-auto"
             onclick="sidenav_close()"
@@ -85,7 +91,9 @@
             <span class="bg-[#0B70E1] p-1 rounded-full"></span>
             <span class="bg-black p-1 rounded-full"></span>
           </button>
-          <ul class="flex flex-col space-y-7 font-semibold text-lg mr-12 p-7">
+          <ul
+            class="lg:hidden flex flex-col space-y-7 font-semibold text-lg mr-12 p-7"
+          >
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -128,7 +136,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   </body>
 </html>
 
