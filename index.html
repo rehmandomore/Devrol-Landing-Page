@@ -33,46 +33,8 @@
         </div>
       </div>
     </div>
-    <!-- Header -->
-    <header class="px-16 flex justify-between items-center pt-5">
-      <img
-        class="h-20"
-        src="https://devrol.com/wp-content/uploads/2022/02/Copy-of-FullLogo_Transparent.png"
-        alt=""
-      />
-      <nav class="flex items-center space-x-5">
-        <ul class="lg:flex hidden space-x-5 font-semibold text-lg mr-12">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="space-x-10 flex items-center">
-          <button onclick="search()" class="">
-            <i class="bi bi-search text-lg"></i>
-          </button>
-          <button
-            class="grid grid-cols-3 w-full h-full gap-1"
-            onclick="sidenav_open()"
-          >
-            <span class="bg-black p-1 rounded-full"></span>
-            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-            <span class="bg-black p-1 rounded-full"></span>
-            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-            <span class="bg-black p-1 rounded-full"></span>
-            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-            <span class="bg-black p-1 rounded-full"></span>
-            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
-            <span class="bg-black p-1 rounded-full"></span>
-          </button>
-        </div>
-      </nav>
-    </header>
     <!-- Side-Nav -->
-    <aside
-      class="flex justify-end duration-1000 -mt-[7rem] -mr-[100%]"
-      id="sidenav"
-    >
+    <aside class="flex justify-end duration-1000 -mr-[100%]" id="sidenav">
       <div
         class="bg-gradient-to-r fixed h-screen from-[#E4EBF8] to-[#FAFBFD] w-5/12"
       >
@@ -137,6 +99,312 @@
         </div>
       </div>
     </aside>
+    <!-- Header -->
+    <header
+      class="px-16 flex justify-between items-center sticky top-0 bg-white pt-5"
+    >
+      <img
+        class="h-20"
+        src="https://devrol.com/wp-content/uploads/2022/02/Copy-of-FullLogo_Transparent.png"
+        alt=""
+      />
+      <nav class="flex items-center space-x-5">
+        <ul class="lg:flex hidden space-x-5 font-semibold text-lg mr-12">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="space-x-10 flex items-center">
+          <button onclick="search()" class="">
+            <i class="bi bi-search text-lg"></i>
+          </button>
+          <button
+            class="grid grid-cols-3 w-full h-full gap-1"
+            onclick="sidenav_open()"
+          >
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+            <span class="bg-[#0B70E1] p-1 rounded-full"></span>
+            <span class="bg-black p-1 rounded-full"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner -->
+    <div
+      id="home"
+      class="mt-10 flex lg:flex-row flex-col-reverse justify-center items-center container mx-auto md:space-x-10 space-x-0"
+    >
+      <div class="lg:w-[30rem] w-10/12 mt-10">
+        <h1 class="text-4xl font-semibold">The Right Side</h1>
+        <p class="mt-5 leading-8 text-xl text-gray-600 font-serif">
+          Your one stop shop for the latest tech consultation and solutions
+          adhering to the top notch trending expertise in the market around the
+          globe. Catering to your requirements and needs is our utmost priority
+          moving towards a long term business relationship.
+        </p>
+      </div>
+      <img
+        class="lg:w-[35rem] w-9/12"
+        src="https://devrol.com/wp-content/uploads/2020/12/data-analysis2-600x515.png"
+        alt=""
+      />
+    </div>
+    <!-- Cards-->
+    <div class="text-center mt-28 h-full container mx-auto">
+      <p class="font-serif text-orange-500 text-md">WE ARE BEST</p>
+      <h1 class="text-3xl font-semibold mt-2">Why us</h1>
+      <div
+        class="grid grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-10 p-10"
+      >
+        <div
+          class="bg-white shadow-lg flex flex-col items-center p-10 space-y-2 bg-[url(https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/bg-box.png)] bg-cover bg-center bg-no-repeat"
+        >
+          <img
+            class="w-20"
+            src="https://devrol.com/wp-content/uploads/2020/12/creativity.png"
+            alt=""
+          />
+          <h1 class="font-semibold text-2xl">Continuous Improvement</h1>
+          <p>
+            We keep on identifying opportunities for streamlining our processes
+            and reducing the waste. We strive to improve and accelerate
+            innovation thus helping the customer benefit through improved
+            quality and safety.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-lg flex flex-col justify-center items-center p-10 space-y-2 bg-[url(https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/bg-box-2.png)] bg-center bg-cover bg-no-repeat"
+        >
+          <img
+            class="w-20"
+            src="https://devrol.com/wp-content/uploads/2020/12/graphic-tool.png"
+            alt=""
+          />
+          <h1 class="font-semibold text-2xl">In-time, milestone delivery</h1>
+          <p>
+            We are always focused on providing the clients with the best
+            solution that is optimal to their business needs and delivering it
+            in a timely manner so that wastage of valuable resources can be
+            handled accordingly.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-lg flex flex-col justify-center items-center p-10 space-y-2 bg-[url(https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/bg-box-3.png)] bg-cover bg-center bg-no-repeat"
+        >
+          <img
+            class="w-20"
+            src="https://devrol.com/wp-content/uploads/2020/12/idea-2.png"
+            alt=""
+          />
+          <h1 class="font-semibold text-2xl">
+            Effective Client <br />
+            communication
+          </h1>
+          <p>
+            Getting the sense of the exact requirements by the clients is
+            essential, as it will steer the project to the end. That is why we
+            give the communication with our clients the utmost significance at
+            every level so that the tasks are customized according to their
+            needs completely.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- About Us -->
+    <div class="mt-20 w-full bg-[#F6F7F9] h-full md:p-20 p-10" id="about">
+      <div
+        class="container mx-auto flex items-center lg:flex-row flex-col justify-center gap-20"
+      >
+        <div class="lg:w-5/12 w-full">
+          <span class="flex items-center gap-5">
+            <hr class="p-[2px] w-7 bg-[#FD6508]" />
+            <hr class="p-[2px] w-20 bg-[#FD6508]" />
+            <p class="font-serif text-blue-600">About Us</p>
+          </span>
+          <h1 class="text-4xl font-semibold mt-5">
+            Working in IT services for the past decade
+          </h1>
+          <p class="mt-5 font-serif text-[#454545] text-xl font-light">
+            developing and providing web and mobile software + apps for clients
+            throughout the globe.
+            <br />
+            <br />
+            DEVROL is providing full service software solutions to the clients
+            and customers, with a pool of latest tech-groomed specialists
+            working with the modern up to date tech stack. We strive in
+            providing solutions for enterprise use with complete and customized
+            execution. Our clients located across the globe are reaping the
+            benefits of our immaculate services and maintenance throughout the
+            year for any kind of consultancy needed.
+          </p>
+        </div>
+        <img
+          class="lg:w-[35rem] w-10/12"
+          src="https://devrol.com/wp-content/uploads/2020/12/about.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- Industries -->
+    <div class="mt-28 text-center container mx-auto px-20 mb-28">
+      <p class="text-[#F27C1E] font-serif">WORK FOR ANY INDUSTRY</p>
+      <h1 class="text-4xl font-semibold mt-2">Industries</h1>
+      <div
+        class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-items-center mt-20"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            class="w-24"
+            src="https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/fintech.png"
+            alt=""
+          />
+          <h1 class="font-serif mt-2 text-lg">Fintech</h1>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-24"
+            src="https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/medical.png"
+            alt=""
+          />
+          <h1 class="font-serif mt-2 text-lg">Health Care</h1>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-24"
+            src="https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/strategy.png"
+            alt=""
+          />
+          <h1 class="font-serif mt-2 text-lg">Education</h1>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-24"
+            src="https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/target.png"
+            alt=""
+          />
+          <h1 class="font-serif mt-2 text-lg">HR</h1>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-24"
+            src="https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/2020/12/graphic-designer.png"
+            alt=""
+          />
+          <h1 class="font-serif mt-2 text-lg">Logistics</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Technology -->
+    <div class="bg-[#F6F7F9] text-center pb-28">
+      <div class="container mx-auto pt-28">
+        <p class="text-[#F27C1E] font-serif">TECHNOLOGY INDEX</p>
+        <h1 class="text-3xl font-bold mt-2">
+          What Technology We Are Using <br />
+          For Our Valued Customers
+        </h1>
+        <div
+          class="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 place-items-center gap-10 mt-20"
+        >
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/1.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/2.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/3-1.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/6.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/9.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/13.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/34.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/25.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/26.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/19.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/22.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/23.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/24.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/8.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/29.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/14.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/5.png"
+            alt=""
+          />
+          <img
+            class="md:w-28 w-36"
+            src="https://devrol.com/wp-content/uploads/2020/12/12.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
