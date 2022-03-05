@@ -879,9 +879,9 @@
     document.getElementById("sidenav").style.marginRight = "-100%";
   }
   window.addEventListener("mouseup", function (event) {
-    var pol = document.getElementById("sidenav");
-    if (event.target != pol && event.target.parentNode != pol) {
-      pol.style.marginRight = "-100%";
+    let aside = document.getElementById("sidenav");
+    if (event.target != aside && event.target.parentNode != aside) {
+      aside.style.marginRight = "-100%";
     }
   });
   let map;
