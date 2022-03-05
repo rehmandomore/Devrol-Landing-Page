@@ -36,7 +36,7 @@
     <!-- Side-Nav -->
     <aside class="flex justify-end duration-1000 -mr-[100%]" id="sidenav">
       <div
-        class="bg-gradient-to-r fixed h-screen from-[#E4EBF8] to-[#FAFBFD] w-[25rem]"
+        class="bg-gradient-to-r from-[#E4EBF8] to-[#FAFBFD] w-[25rem] h-screen fixed"
       >
         <div class="flex flex-col justify-center">
           <button
@@ -878,6 +878,12 @@
   function sidenav_close() {
     document.getElementById("sidenav").style.marginRight = "-100%";
   }
+  window.addEventListener("mouseup", function (event) {
+    var pol = document.getElementById("sidenav");
+    if (event.target != pol && event.target.parentNode != pol) {
+      pol.style.marginRight = "-100%";
+    }
+  });
   let map;
 
   function initMap() {
