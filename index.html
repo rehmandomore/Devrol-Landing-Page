@@ -866,12 +866,14 @@
 </html>
 
 <script>
+  // Search
   function search() {
     document.getElementById("demo").style.marginTop = "-0%";
   }
   function close_open() {
     document.getElementById("demo").style.marginTop = "-130rem";
   }
+  // Side-Nav
   function sidenav_open() {
     document.getElementById("sidenav").style.marginRight = "-0%";
   }
@@ -885,6 +887,7 @@
     }
   });
 
+  //Map
   let map;
   function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
