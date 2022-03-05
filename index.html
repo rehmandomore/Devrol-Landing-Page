@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -56,10 +56,10 @@
           <ul
             class="lg:hidden flex flex-col space-y-7 font-semibold text-lg mr-12 p-7"
           >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="lg:flex hidden flex-col justify-center h-full p-10">
             <img
@@ -100,7 +100,10 @@
       </div>
     </aside>
     <!-- Header -->
-    <header class="px-16 flex justify-between items-center bg-white pt-5">
+    <header
+      class="px-16 flex justify-between items-center bg-white pt-5"
+      id="home"
+    >
       <img
         class="h-20"
         src="https://devrol.com/wp-content/uploads/2022/02/Copy-of-FullLogo_Transparent.png"
@@ -108,13 +111,13 @@
       />
       <nav class="flex items-center space-x-5">
         <ul class="lg:flex hidden space-x-5 font-semibold text-lg mr-12">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="space-x-10 flex items-center">
-          <button onclick="search()" class="">
+          <button onclick="search()">
             <i class="bi bi-search text-lg"></i>
           </button>
           <button
@@ -404,7 +407,7 @@
       </div>
     </div>
     <!-- Services -->
-    <div class="mt-28 text-center bg-[#FFFFFF] container mx-auto">
+    <div class="mt-28 text-center bg-[#FFFFFF] container mx-auto" id="services">
       <p class="text-[#F27C1E] font-serif">SERVICES</p>
       <h1 class="text-3xl font-bold mt-2">
         Explore Our All Services We <br />
@@ -632,7 +635,7 @@
       </div>
     </div>
     <!-- Contact -->
-    <div class="mt-72 container mx-auto p-5">
+    <div class="mt-72 container mx-auto p-5" id="contact">
       <p class="text-[#F27C1E] font-serif text-center">OUR CLIENTS</p>
       <h1 class="text-3xl font-bold mt-2 text-center">
         Meet Our Happy Clients
