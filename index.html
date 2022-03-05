@@ -15,10 +15,13 @@
     <!-- Search Bar -->
     <div
       class="bg-blue-500 fixed w-full duration-1000 h-screen -mt-[100rem]"
-      id="demo"
+      id="search"
     >
       <div class="p-5 flex justify-end">
-        <button onclick="close_open()" class="bg-white h-10 w-10 rounded-full">
+        <button
+          onclick="search_close()"
+          class="bg-white h-10 w-10 rounded-full"
+        >
           <i class="bi bi-x-lg text-2xl"></i>
         </button>
       </div>
@@ -117,7 +120,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="space-x-10 flex items-center">
-          <button onclick="search()">
+          <button onclick="search_open()">
             <i class="bi bi-search text-lg"></i>
           </button>
           <button
@@ -867,11 +870,11 @@
 
 <script>
   // Search
-  function search() {
-    document.getElementById("demo").style.marginTop = "-0%";
+  function search_open() {
+    document.getElementById("search").style.marginTop = "-0%";
   }
-  function close_open() {
-    document.getElementById("demo").style.marginTop = "-130rem";
+  function search_close() {
+    document.getElementById("search").style.marginTop = "-130rem";
   }
   // Side-Nav
   function sidenav_open() {
